@@ -58,7 +58,7 @@ except URLError as e:
 #'INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES FRUIT_NAME'
 
 def insert_row_snowflake(new_fruit):
-  query = "INSERT INTO FRUIT_LOAD_LIST VALUES 'FRUIT_NAME'"
+  query = "INSERT INTO FRUIT_LOAD_LIST VALUES FRUIT_NAME;"
   #"insert into fruit_load_list values ('"+FRUIT_NAME+"')"
   with my_cnx.cursor() as my_cur:
     my_cur.execute(query)
